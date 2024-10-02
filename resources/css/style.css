@@ -1,0 +1,251 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 20px auto 20px auto;
+  max-width: 900px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-item {
+  background-color: none;
+  position: relative;
+  padding: 10px;
+  flex: 50%;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: darkgray;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  opacity: 0;
+  transition: .5s ease;
+  background-color: none;
+  backdrop-filter: blur(10px);
+}
+
+.flex-item:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  bottom: 0;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  text-align: left;
+}
+
+.detail{
+  padding: 10px;
+  font-size: 15px;
+  text-align: right;
+}
+
+header {
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+#logo {
+  width: 100px;
+  align-items: right;
+}
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+  body {
+    margin: 10px auto 10px auto;
+    max-width: 800px;
+    padding: 0 10px;
+  }
+
+  .flex-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex: 100%;
+  }
+}
